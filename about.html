@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Creative Lorem">
+    <meta name="author" content="The Creative Lorem">
+
+    <meta property="og:title" content="The Creative Lorem" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="res/logo.png" />
+    <!-- ------------------icon title --------------------- -->
+    <link rel="icon" href="dist/img/icons/android-chrome-192x192.png" sizes="16x16" type="image/png">
+
+    <base />
+    <title>The Creative Lorem</title>
+
+    <!-- Global stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+    <!-- ------- font awesome -------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -----------------scripts --------------- -->
+    <script src='../www.google.com/recaptcha/api.js' async defer></script>
+
+</head>
+
+<body>
+
+    <!------- preloader  -------->
+    <div class="preloader_container">
+        <div class="loader"></div>
+    </div>
+    <!------- preloader  -------->
+
+    <!-------------------------- Navbar ----------------------- -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light  bg-white">
+        <div class="container main-nav">
+            <a class="navbar-brand logo" href="index.html">
+
+                <img src="dist/img/logo.svg" alt="" height="70px">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <!-- Right nav -->
+                <ul class="nav navbar-nav ml-auto main_menu ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="organizers.html">Organizers</a></li>
+                            <li><a class="dropdown-item" href="venue.html">Venue</a></li>
+                            <li><a class="dropdown-item" href="committee.html">Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="program.html">Program</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="program.html"> Program</a></li>
+                            <li><a class="dropdown-item" href="formats.html">Formats</a></li>
+                            <li><a class="dropdown-item" href="tracks.html">Themes and Tracks</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="network.html"> Network</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Get Involved</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="become-a-speaker.html">Be a Speaker</a></li>
+                            <li><a class="dropdown-item" href="become-a-moderator.html">Be a Moderator</a></li>
+                            <li><a class="dropdown-item" href="event.html">Register a event</a>
+                            </li>
+                            <li><a class="dropdown-item" href="exhibit.html">Exhibit at the Congress</a></li>
+                            <li><a class="dropdown-item" href="showcase.html">Showcase Innovative Content</a></li>
+                            <li><a class="dropdown-item" href="media-working-group.html">Join Media Working Group</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#">Delegates</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="create-account.html">Registration</a></li>
+                            <li><a class="dropdown-item" href="visa.html">Visa Information</a></li>
+                            <li><a class="dropdown-item" href="accommodation.html">Accomodation</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="user-nav-container">
+                <a style="color:rgb(24, 46, 2); font-weight:900; text-decoration: none;" href="sign-in.html"> <i class="fa fa-sign-in"></i> Sign In | Create Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------- Navbar ----------------------- -->
+    <div class="sticky-social">
+        <a href="#" class="facebook" target="_blank" rel="noopener"> <i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="twitter" target="_blank" rel="noopener"> <i class="fa fa-twitter"></i></a>
+        <a href="#" class="youtube" target="_blank" rel="noopener"> <i class="fa fa-play"></i></a>
+    </div>
+    <div class="message_container" id="alert-message-container">
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('alert-message-container').remove()
+        }, 3000);
+    </script>
+    <section class="page-header" id="about-page">
+        <div class="page-header-bg">
+            <img src="dist/img/headers/about.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-title">
+                    <h3>About</h3>
+                </div>
+                <div class="breadcrumbs">
+                    <span>You are here: </span><a href="index.html"> Home</a> / About / lorem: ipsum. Lorem
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-page">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mask-left-single">
+                            <h3 class="color"><span class="text-dark">Lorem :</span> ipsum. <span class="secondary-color">dolor sit.</span></h3>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mask-left-content text-justify">
+                        <P><span class="theme-italic-bold">Lorem ipsum dolor sit.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt.</P>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 ">
+                        <div class="card bg-color pt-5 pb-5 mr-4 ml-4 mt-5">
+                            <div class="card-body text-white text-center">
+                                <p>Arrival: Sun 27 Sep 2020</p>
+                                <p>On-site days: <br> Mon 28 Sep 2020 – Thur 1 Oct 2020</p>
+                                <p>Departure: 02 Oct 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-justify">
+                        <h5 class="color">lorem <span class="secondary-color">psium</span></h5>
+                        <p><span class="theme-italic-bold">Lorem ipsum dolor sit amet.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam minus aliquam error cum quasi cupiditate! Maiores quibusdam magni maxime perspiciatis!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officiis doloremque ex, et repudiandae similique quis error architecto corporis quod facilis modi ea magni eveniet laboriosam obcaecati fuga, adipisci consectetur
+                            .
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, molestiae! Labore enim minima amet, consequatur id officiis nostrum. Ipsa, quia laborum. Rerum totam sed illum accusantium aspernatur magni dolorem modi!
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="rationale">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="dark-background  text-justify">
+                            <div class="mask-left-single mt-5 mb-5">
+                                <h3 class="text-white">Why lorem: <span class="secondary-color">My lorem.</span> My lorem.
+                                </h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nesciunt porro aliquam molestias veniam nulla, quo aspernatur sit sint accusamus laudantium iusto beatae accusantium voluptas minus id ab doloremque molestiae dolores
+                                aliquid fuga omnis. Quis eos deserunt nisi mollitia eligendi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque in, voluptatem totam soluta dolorum quam aliquam voluptatum beatae nulla a ea ex accusamus. Praesentium quis a aut reiciendis deleniti, dolorem nostrum laboriosam
+                                aspernatur illum nihil. </p>
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, hic nemo odit eligendi eaque possimus illum soluta deserunt, tempora illo nesciunt unde eius ducimus ipsum omnis facere incidunt natus? Saepe nesciunt fugiat
+                                in omnis sit!. </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, dolorum aliquam hic commodi voluptas ea cupiditate qui eos laboriosam, quo voluptates! Quo reprehenderit aliquid cum beatae nulla aliquam deserunt iusto.
+                            </p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nihil possimus? Natus amet et necessitatibus sunt? Magnam quaerat praesentium, nam doloribus, animi asperiores dolores soluta sed cupiditate minima corrupti
+                                incidunt dolor distinctio vero blanditiis dolore ad voluptas excepturi similique fugiat fugit harum quidem velit optio. Cumque odit nemo ipsa corrupti voluptatem, vero amet, doloribus sequi vel, quisquam natus et commodi
+                                nulla molestias ut accusamus maxime dolores labore voluptatum nisi. </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="objectives" class="bg-secondary-color">
+        <div class="section african-mask">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-md-6">
+                        <h4 class="text-white text-center">
+                            Objectives
+                        </h4>
+                        <div class="objectives_list text-white mt-3">
+                            <ul>
+                                <li class="mb-3">Lorem ipsum dolor sit amet. </li>
+                                <li class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing. </li>
+                                <li class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores! </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-white text-center">
+                            Expected Outcomes
+                        </h4>
+                        <div class="objectives_list text-white mt-3">
+                            <ul>
+                                <li class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima animi quibusdam hic cumque modi recusandae nihil, minus nulla est facilis?
+                                </li>
+                                <li class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, at voluptates officiis .</li>
+                                <li class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit illo animi exercitationem quidem molestiae voluptas assumenda dolorem quasi deserunt..</li>
+                                <li class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis error minus ex impedit inventore necessitatibus doloribus. Libero debitis numquam Odio, aliquid error!.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Feature --------------------------------------- -->
+
+    <!-- ----------------------Footer --------------------------------------- -->
+    <section class="bg-color footer-container section">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contact us</h5>
+                    <p><i class="fa fa-home"></i> The Creative Lorem sit amet.<br /> address<br /> Duduma street<br /> Country</p>
+                    <p><i class="fa fa-phone"></i> (+11) - 40 - 56778, 676878/9</p>
+                    <p><i class="fa fa-envelope"></i> email@email.domain</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Follow us</h5>
+                    <div class="social_media">
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-facebook"></i>
+                    </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-twitter"></i>
+                    </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-youtube"></i>
+                    </a>
+
+                    </div>
+                    <p class="mt-4 mb-2">
+                        <b>Subscribe to the Mailing List:</b>
+                    </p>
+                    <form action="#" method="POST">
+                        <input type="hidden" value="/" name="current_link" />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Join the community</p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Your email address" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-sm btn-block btn-secondary">Send <i class="fa fa-paper-plane"></i></button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Quick links</h5>
+                    <p> <a class="text-white" href="network.html">All Lorem ipsum dolor sit.</a> </p>
+                    <p> <a class="text-white" href="resources.html">Resources</a> </p>
+                    <p> <a class="text-white" href="#" target="_blank" rel="noopeer">The creative lorem
+                    Website</a> </p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Twitter feeds</h5>
+
+                    <a class="twitter-timeline" data-height="300" data-theme="dark" data-chrome="nofooter noborders noheader noscrollbar transparent" href="#">Tweets by Lorem, ipsum dolor.</a>
+                    <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer bg-black text-white text-center" id="footer">
+        <div class="container">
+            <div class="row  pt-2">
+                <div class="col-md-9">
+                    <p> <span class="text-left small text-white">The Creative Lorem &copy: 2020. All Rights
+                    Reserved.
+                    Developed by <a href="https://weza-prosoft.com/" target="_blank" rel="noopener" class="">Weza
+                        Prosoft</a>
+                </span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Footer --------------------------------------- -->
+    <script type="text/javascript" src="dist/js/main.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163692996-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163692996-1');
+    </script>
+</body>
+
+</html>
+
+</html>

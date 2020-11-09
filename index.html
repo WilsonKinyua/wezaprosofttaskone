@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Creative Lorem">
+    <meta name="author" content="The Creative Lorem">
+
+    <meta property="og:title" content="The Creative Lorem" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="res/logo.png" />
+    <!-- ------------------icon title --------------------- -->
+    <link rel="icon" href="dist/img/icons/android-chrome-192x192.png" sizes="16x16" type="image/png">
+
+    <base />
+    <title>The Creative Lorem</title>
+
+    <!-- Global stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+    <!-- ------- font awesome -------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -----------------scripts --------------- -->
+    <script src='../www.google.com/recaptcha/api.js' async defer></script>
+
+</head>
+
+<body>
+
+    <!------- preloader  -------->
+    <div class="preloader_container">
+        <div class="loader"></div>
+    </div>
+    <!------- preloader  -------->
+
+    <!-------------------------- Navbar ----------------------- -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light  bg-white">
+        <div class="container main-nav">
+            <a class="navbar-brand logo" href="index.html">
+
+                <img src="dist/img/logo.svg" alt="" height="70px">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <!-- Right nav -->
+                <ul class="nav navbar-nav ml-auto main_menu ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="organizers.html">Organizers</a></li>
+                            <li><a class="dropdown-item" href="venue.html">Venue</a></li>
+                            <li><a class="dropdown-item" href="committee.html">Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="program.html">Program</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="program.html"> Program</a></li>
+                            <li><a class="dropdown-item" href="formats.html">Formats</a></li>
+                            <li><a class="dropdown-item" href="tracks.html">Themes and Tracks</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="network.html"> Network</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Get Involved</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="become-a-speaker.html">Be a Speaker</a></li>
+                            <li><a class="dropdown-item" href="become-a-moderator.html">Be a Moderator</a></li>
+                            <li><a class="dropdown-item" href="event.html">Register a event</a>
+                            </li>
+                            <li><a class="dropdown-item" href="exhibit.html">Exhibit at the Congress</a></li>
+                            <li><a class="dropdown-item" href="showcase.html">Showcase Innovative Content</a></li>
+                            <li><a class="dropdown-item" href="media-working-group.html">Join Media Working Group</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#">Delegates</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="create-account.html">Registration</a></li>
+                            <li><a class="dropdown-item" href="visa.html">Visa Information</a></li>
+                            <li><a class="dropdown-item" href="accommodation.html">Accomodation</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="user-nav-container">
+                <a style="color:rgb(24, 46, 2); font-weight:900; text-decoration: none;" href="sign-in.html"> <i class="fa fa-sign-in"></i> Sign In | Create Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------- Navbar ----------------------- -->
+    <div class="sticky-social">
+        <a href="#" class="facebook" target="_blank" rel="noopener"> <i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="twitter" target="_blank" rel="noopener"> <i class="fa fa-twitter"></i></a>
+        <a href="#" class="youtube" target="_blank" rel="noopener"> <i class="fa fa-play"></i></a>
+    </div>
+    <div class="message_container" id="alert-message-container">
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('alert-message-container').remove()
+        }, 3000);
+    </script>
+    <section class="slider">
+        <div id="main-slider" class="home-carousel carousel slide carousel-fade" data-ride="carousel">
+            <div class="green-block">
+                <div class="container">
+                    <div class="congres-title animated fadeInDown">
+                        <h2 class="map-left">The Creative Lorem</h2>
+                    </div>
+                    <div class="congres-theme animated fadeInDown">
+                        <h5>lorem: ipsum. dolor.</h5>
+                    </div>
+                    <div class="congress-tp animated fadeInDown">
+                        <span class="congress-tp-item">
+                        <span class="congress-tp-icon"> <i class="fa fa-calendar"></i> </span>
+                        <span class="congress-tp-text">September 27 - October 02 2020</span>
+
+                        </span>
+                        <span class="congress-tp-item">
+                        <span class="congress-tp-icon"> <i class="fa fa-map-marker"></i> </span>
+                        <span class="congress-tp-text">North Street,
+                            State, Country</span>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="event-countdown">
+                    <div class="time-item">
+                        <span class="top-time">Days</span>
+                        <span class="bottom-time">
+                        <div id="timedays"></div>
+                    </span>
+                    </div>
+                    <div class="time-item">
+                        <span class="top-time">Hours</span>
+                        <span class="bottom-time">
+                        <div id="timehours"></div>
+                    </span>
+                    </div>
+                    <div class="time-item">
+                        <span class="top-time">Minutes</span>
+                        <span class="bottom-time">
+                        <div id="timeminutes"></div>
+                    </span>
+                    </div>
+
+                    <div class="time-item">
+                        <span class="top-time">Seconds</span>
+                        <span class="bottom-time">
+                        <div id="timeseconds"></div>
+                    </span>
+                    </div>
+
+                    <span id="slider-countdown"></span>
+                </div>
+
+                <div class="congress-social-btns">
+                    <a href="#" target="_blank" rel="noopener" class="text-white"> <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="text-white"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#" target="_blank" rel="noopener" class="text-white"> <i class="fa fa-youtube"></i> </a>
+                </div>
+            </div>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active home-slider-image">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/25/19/52/sun-5685447_960_720.jpg" alt="">
+                </div>
+                <div class="carousel-item  home-slider-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879_960_720.jpg" alt="">
+                </div>
+                <div class="carousel-item  home-slider-image">
+                    <img src="https://cdn.pixabay.com/photo/2020/08/28/05/36/apple-5523590_960_720.jpg" alt="">
+                </div>
+                <div class="carousel-item  home-slider-image">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/17/11/55/elephants-5661842_960_720.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="container d-none d-sm-block">
+                <div class="welcome-karibu-container">
+
+                </div>
+                <a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left next-prev-icon"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right next-prev-icon"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="postponement" class="bg-secondary-color">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-3">
+                        <div class="postponement">
+                            <h3 class="text-white"><i class="fa fa-warning"></i> New lorem Dates</h3>
+                            <p class="text-white">The Creative Lorem sit, amet consectetur adipisicing elit. Odit, sunt dolores ex cupiditate nemo porro illo corrupti laboriosam sapiente aperiam! Temporibus consectetur voluptatibus neque ducimus fuga sapiente sint officiis
+                                obcaecati aspernatur similique! Voluptatibus quisquam dicta ab harum veniam alias nihil, voluptas ipsam velit beatae minus saepe incidunt expedita nesciunt dolores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------About --------------------------------------- -->
+    <section id="about">
+        <div class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h4 class="color"><span class="mask-left-single ">About <span class="secondary-color">lorem ipsum</span></span>
+                        </h4>
+                    </div>
+                    <div class="col-md-12 mask-left-content text-center">
+                        <P>The Creative Lorem sit, amet consectetur adipisicing elit. Adipisci illo, officiis cum qui voluptatum itaque impedit. Soluta suscipit quo amet, totam impedit reiciendis, reprehenderit eos accusantium id provident, esse possimus.
+                        </P>
+                    </div>
+                </div>
+                <style>
+                    .hover-card:hover {
+                        color: rgb(255, 4, 4);
+                    }
+                </style>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-4">
+                        <div class="card card-default">
+                            <div class="card-body hover-card">
+                                <h5 class="color">Lorem, ipsum dolor. </h5>
+                                <p>The Creative Lorem sit amet consectetur adipisicing elit. Iure saepe, dolores beatae itaque dicta aut blanditiis aliquam omnis amet explicabo tempore ullam suscipit placeat. Nesciunt nisi suscipit vitae deleniti at dolor
+                                    assumenda. <b>Lorem:<span class="color"> My Lorem.
+                                    </span><span class="secondary-color">My Future Lorem.</span></b></p>
+                                <p><a href="about.html" class="color">Read more  <i class="fa fa-arrow-right"></i> </a></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default">
+                            <div class="card-body hover-card">
+                                <h5 class="color">Lorem, ipsum dolor. </h5>
+                                <p>The Creative Lorem, sit amet consectetur adipisicing elit. Molestiae odio voluptatem, repudiandae praesentium iure, animi ipsam rem nesciunt necessitatibus beatae fugiat? Repellendus consequatur est ad aliquam enim ipsa
+                                    praesentium sunt excepturi ab sapiente nisi, assumenda,</p>
+                                <p><a href="about.html" class="color">Read more <i class="fa fa-arrow-right"></i> </a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default">
+                            <div class="card-body hover-card">
+                                <h5 class="color">Lorem, ipsum dolor. </h5>
+                                <p>The Creative Lorem, sit amet consectetur adipisicing elit. Molestiae odio voluptatem, repudiandae praesentium iure, animi ipsam rem nesciunt necessitatibus beatae fugiat? Repellendus consequatur est ad aliquam enim ipsa
+                                    praesentium sunt excepturi ab sapiente nisi, assumenda,</p>
+                                <p><a href="about.html" class="color">Read more <i class="fa fa-arrow-right"></i></a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------About --------------------------------------- -->
+    <!-- ----------------------Feature --------------------------------------- -->
+    <section class="bg-dark" id="objectives">
+        <div class="section objectives">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="secondary-color text-center">
+                            Lorem, ipsum.
+                        </h4>
+                    </div>
+                    <div class="col-mb-8 m-auto text-white">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod est quo nostrum!
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h4 class="secondary-color text-center">
+                            Lorem.
+                        </h4>
+                    </div>
+                    <div class="col-mb-8 m-auto">
+                        <div class="objectives_list text-center text-white mt-3">
+                            <p>The Creative Lorem sit amet.</p>
+                            <p>The Creative Lorem, sit amet consectetur adipisicing. </p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Feature --------------------------------------- -->
+    <section class="bg-light">
+        <div class="section themes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-4 text-center">
+                        <h3>What I do</h3>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a class="theme-link-a" href="tracks.html">
+                            <div class="card theme-link">
+                                <div class="card-body text-center">
+                                    <div class="thematic-icon text-center secondary-color">
+                                        <img src="dist/img/icons/youth-patriotism.svg" alt="" width="80px">
+                                    </div>
+                                    <div class="thematic-title text-center color mb-4">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                    </div>
+                                    <div class="thematic-content">
+                                        <p class="p-3">
+                                            The Creative Lorem sit amet consectetur adipisicing elit. Dolorum maiores nemo, ducimus cum aspernatur harum aperiam quis porro, soluta est numquam eaque rerum! Optio quis obcaecati facere minima, eveniet totam et nihil, est soluta veritatis nostrum.
+                                            Dignissimos, consectetur dolores. Repudiandae commodi est unde quos aperiam eaque aliquam? Optio dolor maiores sapiente. Doloribus recusandae eligendi veritatis, impedit, corrupti perspiciatis cumque neque commodi
+                                            tempora at quos! Animi quas unde maxime harum quis.
+                                        </p>
+                                        <p class="color">Learn more <i class="fa fa-arrow-right"></i></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <a class="theme-link-a" href="tracks.html">
+                            <div class="card theme-link">
+                                <div class="card-body text-center">
+                                    <div class="thematic-icon text-center secondary-color">
+                                        <img src="dist/img/icons/active-citizenship.svg" alt="" width="80px">
+                                    </div>
+                                    <div class="thematic-title text-center color mb-4">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                    </div>
+                                    <div class="thematic-content">
+                                        <p class="p-3">The Creative Lorem sit amet consectetur adipisicing elit. Dolorum maiores nemo, ducimus cum aspernatur harum aperiam quis porro, soluta est numquam eaque rerum! Optio quis obcaecati facere minima, eveniet totam
+                                            et nihil, est soluta veritatis nostrum. Dignissimos, consectetur dolores. Repudiandae commodi est unde quos aperiam eaque aliquam? Optio dolor maiores sapiente. Doloribus recusandae eligendi veritatis, impedit,
+                                            corrupti perspiciatis cumque neque commodi tempora at quos! Animi quas unde maxime harum quis.</p>
+                                        <p class="color">Learn more <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a class="theme-link-a" href="tracks.html">
+                            <div class="card theme-link">
+                                <div class="card-body text-center">
+                                    <div class="thematic-icon text-center secondary-color">
+                                        <img src="dist/img/icons/justice-secutiry.svg" alt="" width="80px">
+                                    </div>
+                                    <div class="thematic-title text-center color mb-4">
+                                        <h4>The Creative Lorem sit amet.</h4>
+                                    </div>
+                                    <div class="thematic-content">
+                                        <p class="p-3">The Creative Lorem sit amet consectetur adipisicing elit. Dolorum maiores nemo, ducimus cum aspernatur harum aperiam quis porro, soluta est numquam eaque rerum! Optio quis obcaecati facere minima, eveniet totam
+                                            et nihil, est soluta veritatis nostrum. Dignissimos, consectetur dolores. Repudiandae commodi est unde quos aperiam eaque aliquam? Optio dolor maiores sapiente. Doloribus recusandae eligendi veritatis, impedit,
+                                            corrupti perspiciatis cumque neque commodi tempora at quos! Animi quas unde maxime harum quis.</p>
+                                        <p class="color">Learn more <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a class="theme-link-a" href="tracks.html">
+                            <div class="card theme-link">
+                                <div class="card-body text-center">
+                                    <div class="thematic-icon text-center secondary-color">
+                                        <img src="dist/img/icons/african-dignity.svg" alt="" width="80px">
+                                    </div>
+                                    <div class="thematic-title text-center color mb-4">
+                                        <h4>The Creative Lorem sit amet.</h4>
+                                    </div>
+                                    <div class="thematic-content pb-3">
+                                        <p class="p-3">The Creative Lorem sit amet consectetur adipisicing elit. Dolorum maiores nemo, ducimus cum aspernatur harum aperiam quis porro, soluta est numquam eaque rerum! Optio quis obcaecati facere minima, eveniet totam
+                                            et nihil, est soluta veritatis nostrum. Dignissimos, consectetur dolores. Repudiandae commodi est unde quos aperiam eaque aliquam? Optio dolor maiores sapiente. Doloribus recusandae eligendi veritatis, impedit,
+                                            corrupti perspiciatis cumque neque commodi tempora at quos! Animi quas unde maxime harum quis.</p>
+                                        <p class="color">Learn more <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Feature --------------------------------------- -->
+
+    <!-- ----------------------Footer --------------------------------------- -->
+    <section class="bg-color footer-container section">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contact us</h5>
+                    <p><i class="fa fa-home"></i> The Creative Lorem sit amet.<br /> address<br /> Duduma street<br /> Country</p>
+                    <p><i class="fa fa-phone"></i> (+11) - 40 - 56778, 676878/9</p>
+                    <p><i class="fa fa-envelope"></i> email@email.domain</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Follow us</h5>
+                    <div class="social_media">
+                        <a class="text-white" href="#" target="_blank"><i
+                                class="fa fa-facebook"></i>
+                        </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                                class="fa fa-twitter"></i>
+                        </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                                class="fa fa-youtube"></i>
+                        </a>
+
+                    </div>
+                    <p class="mt-4 mb-2">
+                        <b>Subscribe to the Mailing List:</b>
+                    </p>
+                    <form action="#" method="POST">
+                        <input type="hidden" value="/" name="current_link" />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Join the community</p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Your email address" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-sm btn-block btn-secondary">Send <i class="fa fa-paper-plane"></i></button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Quick links</h5>
+                    <p> <a class="text-white" href="network.html">All Lorem ipsum dolor sit.</a> </p>
+                    <p> <a class="text-white" href="resources.html">Resources</a> </p>
+                    <p> <a class="text-white" href="#" target="_blank" rel="noopeer">The creative lorem
+                        Website</a> </p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Twitter feeds</h5>
+
+                    <a class="twitter-timeline" data-height="300" data-theme="dark" data-chrome="nofooter noborders noheader noscrollbar transparent" href="#">Tweets by Lorem, ipsum dolor.</a>
+                    <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer bg-black text-white text-center" id="footer">
+        <div class="container">
+            <div class="row  pt-2">
+                <div class="col-md-9">
+                    <p> <span class="text-left small text-white">The Creative Lorem &copy: 2020. All Rights
+                        Reserved.
+                        Developed by <a href="https://weza-prosoft.com/" target="_blank" rel="noopener" class="">Weza
+                            Prosoft</a>
+                    </span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Footer --------------------------------------- -->
+    <script type="text/javascript" src="dist/js/main.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163692996-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163692996-1');
+    </script>
+</body>
+
+</html>
+
+</html>

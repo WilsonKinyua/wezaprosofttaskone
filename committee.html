@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lorem ipsum dolor">
+    <meta name="author" content="Lorem ipsum dolor">
+
+    <meta property="og:title" content="Lorem ipsum dolor" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="res/logo.png" />
+    <!-- ------------------icon title --------------------- -->
+    <link rel="icon" href="res/favicon.png" sizes="16x16" type="image/png">
+
+
+    <base />
+    <title>Lorem ipsum dolor</title>
+
+    <!-- Global stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+    <!-- ------- font awesome -------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -----------------scripts --------------- -->
+    <script src='../www.google.com/recaptcha/api.js' async defer></script>
+</head>
+
+<body>
+    <!------- preloader  -------->
+    <div class="preloader_container">
+        <div class="loader"></div>
+    </div>
+    <!------- preloader  -------->
+    <!-------------------------- Navbar ----------------------- -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light  bg-white">
+        <div class="container main-nav">
+            <a class="navbar-brand logo" href="index.html">
+
+                <img src="dist/img/logo.svg" alt="" height="70px">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+                <!-- Right nav -->
+                <ul class="nav navbar-nav ml-auto main_menu ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown active ">
+                        <a class="nav-link dropdown-toggle" href="#">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="organizers.html">Organizers</a></li>
+                            <li><a class="dropdown-item " href="venue.html">Venue</a></li>
+                            <li><a class="dropdown-item active" href="steering_committee.html">Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="program.html">Program</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="program.html"> Program</a></li>
+                            <li><a class="dropdown-item" href="session-formats.html">Formats</a></li>
+                            <li><a class="dropdown-item" href="themes-tracks.html">Themes and Tracks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="all_africa_youth_network.html"> Network</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Get Involved</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="become-a-speaker.html">Be a Speaker</a></li>
+                            <li><a class="dropdown-item" href="become-a-moderator.html">Be a Moderator</a></li>
+                            <li><a class="dropdown-item" href="auxiliary-event.html">Register a side/ Auxiliary event</a>
+                            </li>
+                            <li><a class="dropdown-item" href="exhibit.html">Exhibit at the Congress</a></li>
+                            <li><a class="dropdown-item" href="showcase.html">Showcase Innovative Content</a></li>
+                            <li><a class="dropdown-item" href="media-working-group.html">Join Media Working Group</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#">Delegates</a>
+                        <ul class="dropdown-menu">
+                            <!-- <li><a class="dropdown-item" href="delegates.html">Delegates</a></li>
+                         -->
+                            <li><a class="dropdown-item" href="create-account.html">Registration</a></li>
+                            <li><a class="dropdown-item" href="visa_information/details/visa-information.html">Visa
+                                    Information</a></li>
+                            <li><a class="dropdown-item" href="visa_information/details/accommodation.html">Accomodation</a>
+                            </li>
+                            <!--  <li><a class="dropdown-item" href="visa_information/details/travel">Travel</a></li> -->
+                            <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="user-nav-container">
+                <a style="color:rgb(24, 46, 2); font-weight:900; text-decoration: none;" href="sign-in.html"> <i class="fa fa-sign-in"></i> Login | Register</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------- Navbar ----------------------- -->
+    <div class="sticky-social">
+        <a href="#" class="facebook" target="_blank" rel="noopener"> <i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="twitter" target="_blank" rel="noopener"> <i class="fa fa-twitter"></i></a>
+        <a href="#" class="youtube" target="_blank" rel="noopener"> <i class="fa fa-play"></i></a>
+    </div>
+    <div class="message_container" id="alert-message-container">
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('alert-message-container').remove()
+        }, 3000);
+    </script>
+    <section class="page-header" id="about-page">
+        <div class="page-header-bg">
+            <img src="res/headers/about.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-title">
+                    <h3>Team</h3>
+                </div>
+                <div class="breadcrumbs">
+                    <span>You are here: </span><a href="index.html">Home</a> / <a href="about.html"> About</a> / Committee
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <div class="row section" style="padding-bottom: 20px;">
+            <div class="col-md-12 m-auto text-center">
+                <h3 class="secondary-color">Team</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga aliquam sed perspiciatis nesciunt quasi nobis commodi voluptatibus, ea dolor similique eius cum. Enim magnam molestias, incidunt reiciendis ex esse beatae modi omnis
+                    blanditiis rem minus quae dolorum accusamus sint quibusdam fugit labore debitis expedita ad aliquid velit exercitationem consectetur! Vitae dolorum rem iste necessitatibus, inventore vero blanditiis reprehenderit temporibus explicabo
+                    qui saepe autem voluptatibus reiciendis debitis quod illo quo nam! Tempora reprehenderit modi magnam molestiae doloremque dolore expedita praesentium dolorum quo nulla quam facere, nihil tempore illum. Commodi tempore non perspiciatis?
+                    Consequuntur quaerat iure numquam suscipit blanditiis facere repellat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="data:image/jpeg;base64,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"
+                        width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Adebayo Anthony Kehinde</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/adebayo-anthony-kehinde.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-1.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Tibonge Namwai Ng’ambi</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/tibonge-namwai-ng-ambi.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-2.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Neo Michael Mosima</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/neo-michael-mosima.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-3.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Kadliura Carolyn Samuel</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/kadliura-carolyn-samuel.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-4.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Magar Emmanuel Yayoune, </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/magar-emmanuel-yayoune.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-1.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Dr. Pacis-Alarine Irambona</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/dr-pacis-alarine-irambona.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-3.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Nyambura Mundia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/nyambura-mundia.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-3.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Nkosana Jeremia Mabuza</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/adebayo-anthony-kehinde.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card staring_commitee">
+                    <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-3.jpg" width="100%" alt="">
+                    <div class="card-body">
+                        <h4>Collins Kudakwashe Shava</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium!, ...
+                        </p>
+                        <a href="steering_committee/details/adebayo-anthony-kehinde.html" class="btn btn-primary"> <i class="fa fa-eye"></i> View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mypagination">
+                    <div class="d-flex justify-content-center pt-3 mb-3">
+                        <ul class="pagination">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Footer --------------------------------------- -->
+    <section class="bg-color footer-container section">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contact us</h5>
+                    <p><i class="fa fa-home"></i> Lorem ipsum dolor sit amet.<br /> address<br /> Duduma street<br /> Country</p>
+                    <p><i class="fa fa-phone"></i> (+11) - 40 - 56778, 676878/9</p>
+                    <p><i class="fa fa-envelope"></i> email@email.domain</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Follow us</h5>
+                    <div class="social_media">
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-facebook"></i>
+                    </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-twitter"></i>
+                    </a>
+                        <a class="text-white" href="#" target="_blank"><i
+                            class="fa fa-youtube"></i>
+                    </a>
+
+                    </div>
+                    <p class="mt-4 mb-2">
+                        <b>Subscribe to the Mailing List:</b>
+                    </p>
+                    <form action="#" method="POST">
+                        <input type="hidden" value="/" name="current_link" />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Join the community</p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Your email address" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-sm btn-block btn-secondary">Send <i class="fa fa-paper-plane"></i></button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Quick links</h5>
+                    <p> <a class="text-white" href="all_africa_youth_network.html">All Africa Youth Network</a> </p>
+                    <p> <a class="text-white" href="resources.html">Resources</a> </p>
+                    <p> <a class="text-white" href="#" target="_blank" rel="noopeer">AACC
+                    Website</a> </p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Twitter feeds</h5>
+
+                    <a class="twitter-timeline" data-height="300" data-theme="dark" data-chrome="nofooter noborders noheader noscrollbar transparent" href="$">Tweets by Lorem, ipsum dolor.</a>
+                    <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer bg-black text-white text-center" id="footer">
+        <div class="container">
+            <div class="row  pt-2">
+                <div class="col-md-9">
+                    <p> <span class="text-left small text-white">Lorem ipsum dolor &copy: 2020. All Rights
+                    Reserved.
+                    Developed by <a href="https://weza-prosoft.com/" target="_blank" rel="noopener" class="">Weza
+                        Prosoft</a>
+                </span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------Footer --------------------------------------- -->
+    <script type="text/javascript" src="themes/js/main.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163692996-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163692996-1');
+    </script>
+</body>
+
+
+<!-- Mirrored from allafricayouthcongress.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Nov 2020 10:33:23 GMT -->
+
+</html>
